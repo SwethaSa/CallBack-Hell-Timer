@@ -1,0 +1,47 @@
+.container h1 {
+    font-size: 200px;
+    text-align: center;
+    color: #cc2b5e;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px #dc2430;
+    animation: count-down 1s;
+    margin-top: 7cm;
+  }
+  
+  .container h2 {
+    font-size: 100px;
+    text-align: center;
+    color: #753a88;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px #eb3349 ;
+    margin-top: 8cm;
+  }
+  
+  @keyframes count-down {
+      0%   {font-size: 200px; color: #ee9ca7 ;}
+      50%  {font-size: 100px; color: #ffdde1;}
+      100% {font-size: 200px; color: #ee9ca7 ;}
+  }
+  
+  @media (max-width: 600px) {
+    .container h1 {
+      font-size: 36px;
+    }
+    .container h2 {
+      font-size: 24px;
+    }
+  }
+  
+
+  .container h2 {
+    animation: pop 0.5s;
+  }
+  
+  @keyframes pop {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
